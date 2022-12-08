@@ -1,0 +1,769 @@
+.form {
+  background: black;
+  display: block;
+  width: 650px !important;
+  height: 100%;
+  padding: 20px 17px;
+}
+
+.form .fancybox-button {
+  display: none;
+}
+
+.form-inner {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid #BA975C;
+  padding: 0 144px 0 113px;
+}
+
+.form-inner form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 12rem;
+  font-family: "TT Firs Neue";
+}
+
+#mainForm_done .form-inner form {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.main-form__label {
+  margin-bottom: 3.7rem;
+  font-weight: 300;
+  font-size: 4.6rem;
+  line-height: 1.3em;
+  color: #BA975C;
+  text-transform: uppercase;
+}
+
+.main-form__text {
+  margin-bottom: 4.6rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 1.3em;
+  color: #BA975C;
+}
+
+.main-form__input {
+  margin-bottom: 2.7rem;
+  padding: 2.1rem 2.3rem;
+  border: 1px solid #D7A250;
+  border-radius: 64px;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+}
+
+.main-form__input::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+}
+
+.main-form__input::-moz-placeholder {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+}
+
+.main-form__input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+}
+
+.main-form__input::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+}
+
+.main-form__input::placeholder {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+}
+
+.main-form__input:focus,
+.main-form__input:enabled {
+  border: 1px solid #D7A250;
+  border-color: 0;
+  outline: 0;
+}
+
+.main-form__btn {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding: 2.1rem 0;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  letter-spacing: 0.165em;
+  color: #090909;
+  background: #BA975C;
+  border-radius: 64px;
+}
+
+.main-form__terms {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.3em;
+  color: #BA975C;
+}
+
+.main-form__close {
+  height: 6rem;
+  width: 6rem;
+  position: absolute;
+  right: 4rem;
+  top: 3.5rem;
+  cursor: pointer;
+}
+
+.preload {
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+  background: #000000;
+  -webkit-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  transition: max-height 1s;
+  max-height: 0;
+}
+
+.preload-active {
+  max-height: 100vh;
+}
+
+.header__left-menu {
+  height: 100vh;
+  width: 0%;
+  padding-top: calc(52px + 5em);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  font-size: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9)));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+  overflow: auto;
+  -webkit-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.header__left-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.header__left-menu__opened {
+  width: 50%;
+}
+
+.header__left-menu__wrap {
+  padding: 7.5rem 10rem 15rem 10rem;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.header__left-menu-item {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "TT Firs Neue";
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 1.3em;
+  color: #BA975C;
+}
+
+.buy-form {
+  padding: 6.8rem 7.4rem 3.8rem 4.8rem;
+  border: 1px solid #DCB081;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.buy-form input {
+  width: 100%;
+  padding: 2.1rem 2.3rem;
+  border: 1px solid #D7A250;
+  border-radius: 64px;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+  background: transparent;
+  outline: none;
+}
+
+.buy-form input :focus {
+  border: 1px solid #D7A250;
+  color: #AFAFAF;
+}
+
+.buy-form input ::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+}
+
+.buy-form input ::-moz-placeholder {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+}
+
+.buy-form input :-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+}
+
+.buy-form input ::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+}
+
+.buy-form input ::placeholder {
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.3em;
+  color: #AFAFAF;
+}
+
+.buy-form__label {
+  margin-bottom: 4.2rem;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  color: #BA975C;
+}
+
+.buy-form__terms {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #BA975C;
+}
+
+.buy-form__terms-row {
+  margin-top: 6.3rem;
+}
+
+.main-btn {
+  padding: 2.15rem;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  text-align: center;
+  letter-spacing: 0.165em;
+  color: #090909;
+  background: #BA975C;
+  border-radius: 64px;
+  text-decoration: none;
+}
+
+.buy-form__btn {
+  width: 100%;
+}
+
+.buy-bank {
+  height: 8.1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #DCB081;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.buy-bank img {
+  width: 80%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.radio__type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  -webkit-column-gap: 7px;
+  -moz-column-gap: 7px;
+  column-gap: 7px;
+}
+
+.radio__type-btn {
+  padding: 10px 28px;
+  text-decoration: none;
+  background: transparent;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  color: #AFAFAF;
+  border: 1px solid #DBA544;
+}
+
+.radio__type-btn__active {
+  color: #232323;
+  background: -o-linear-gradient(359.35deg, #BA975C 0.56%, #F6E7CC 49.96%, #D7A250 98.34%);
+  background: linear-gradient(90.65deg, #BA975C 0.56%, #F6E7CC 49.96%, #D7A250 98.34%);
+}
+
+.progress__img {
+  position: relative;
+  width: 100%;
+}
+
+.progress__img::after {
+  content: "";
+  display: block;
+  padding-top: 60%;
+}
+
+.progress__img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.progress__label {
+  margin-bottom: 5rem;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 4.1rem;
+  text-transform: uppercase;
+  background: -o-linear-gradient(359.35deg, #BA975C 0.56%, #F6E7CC 49.96%, #D7A250 98.34%);
+  background: linear-gradient(90.65deg, #BA975C 0.56%, #F6E7CC 49.96%, #D7A250 98.34%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.progress__btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin-top: 10rem;
+  margin-bottom: 8rem;
+  margin-inline: auto;
+}
+
+.progress-archive__swiper {
+  height: 34.5rem;
+  overflow: hidden;
+  margin: 0 5rem;
+  position: relative;
+}
+
+.progress-archive__swiper::after {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  height: 100%;
+  width: 7.5rem;
+  top: 0;
+  right: 0;
+  background: -o-linear-gradient(182.48deg, #020203 2.13%, rgba(2, 2, 3, 0) 103.17%);
+  background: linear-gradient(267.52deg, #020203 2.13%, rgba(2, 2, 3, 0) 103.17%);
+}
+
+.progress-archive__swiper::before {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  height: 100%;
+  width: 7.5rem;
+  top: 0;
+  left: 0;
+  background: -o-linear-gradient(182.48deg, #020203 2.13%, rgba(2, 2, 3, 0) 103.17%);
+  background: linear-gradient(267.52deg, #020203 2.13%, rgba(2, 2, 3, 0) 103.17%);
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+  -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.progress-archive__swiper-slide {
+  position: relative;
+}
+
+.progress-archive__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.progress-archive__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.progress-archive__img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.8;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.progress-archive__img-month {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 3;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 4.1rem;
+  text-transform: uppercase;
+  color: #E7E7E7;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.swiper-slide-active .progress-archive__img::after {
+  background: transparent;
+}
+
+.swiper-slide-active .progress-archive__img-month {
+  color: transparent;
+}
+
+.progress-archive__scrollbar {
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+  background: #BA975C;
+  height: 3px !important;
+}
+
+.progress-archive__scrollbar .swiper-scrollbar-drag {
+  background: #BA975C;
+  top: -1px;
+  height: 5px;
+}
+
+.progress-archive__nav {
+  position: absolute;
+  top: calc(50% - 2.4rem);
+  z-index: 5;
+}
+
+.progress-archive__nav img {
+  width: 4.8rem;
+  height: 4.8rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.progress-archive__prev {
+  left: 0;
+}
+
+.progress-archive__next {
+  right: 0;
+}
+
+.img-plus {
+  position: relative;
+  cursor: pointer;
+}
+
+.img-plus::before {
+  content: url("/img/img-plus.svg");
+  z-index: 6;
+  position: absolute;
+  width: 4.8rem;
+  height: 4.8rem;
+  top: 5%;
+  display: block;
+}
+
+.plus-left::before {
+  left: 5%;
+}
+
+.plus-right::before {
+  right: 5%;
+}
+
+.bottom-btn {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.main-arrow-down {
+  margin-top: 11.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.main-arrow-down img {
+  cursor: pointer;
+  width: 4.8rem;
+  height: 4.8rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.main-arrow-down .caption {
+  white-space: nowrap;
+  position: absolute;
+  right: 8.4rem;
+  top: 25%;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+.arrow-down__container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.arrow-down {
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .form-inner {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 10rem 0 8.5rem;
+  }
+
+  .form-inner form {
+    padding-top: 6rem;
+  }
+
+  .main-form__text {
+    font-size: 2rem;
+  }
+
+  .main-form__terms {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: 100% !important;
+    padding: 20px;
+  }
+
+  .form-inner {
+    padding: 0 8rem 0 7.5rem;
+  }
+
+  .form-inner form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 5rem;
+    font-family: "TT Firs Neue";
+  }
+
+  .main-form__label {
+    font-size: 6rem;
+  }
+
+  .main-form__text {
+    font-size: 2.5rem;
+  }
+
+  .main-form__terms {
+    font-size: 2rem;
+  }
+
+  .main-form__input {
+    padding: 2.5rem 2.9rem;
+  }
+
+  .main-form__input::-webkit-input-placeholder {
+    font-size: 3rem;
+  }
+
+  .main-form__input::-moz-placeholder {
+    font-size: 3rem;
+  }
+
+  .main-form__input:-ms-input-placeholder {
+    font-size: 3rem;
+  }
+
+  .main-form__input::-ms-input-placeholder {
+    font-size: 3rem;
+  }
+
+  .main-form__input::placeholder {
+    font-size: 3rem;
+  }
+
+  .main-form__btn {
+    padding: 3rem 0;
+    font-size: 2.3rem;
+  }
+
+  .header__left-menu__opened {
+    width: 100%;
+  }
+
+  .buy-form input {
+    margin-bottom: 3rem;
+  }
+
+  .buy-form__terms-row {
+    margin-top: 0;
+  }
+
+  .buy-form__btn {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-inner form {
+    padding-top: 7rem;
+  }
+
+  .main-form__label {
+    font-size: 5rem;
+  }
+
+  .main-form__input {
+    padding: 2.3rem 2.5rem;
+  }
+
+  .main-form__input::-webkit-input-placeholder {
+    font-size: 2.5rem;
+  }
+
+  .main-form__input::-moz-placeholder {
+    font-size: 2.5rem;
+  }
+
+  .main-form__input:-ms-input-placeholder {
+    font-size: 2.5rem;
+  }
+
+  .main-form__input::-ms-input-placeholder {
+    font-size: 2.5rem;
+  }
+
+  .main-form__input::placeholder {
+    font-size: 2.5rem;
+  }
+
+  .main-form__btn {
+    padding: 2.5rem 0;
+    font-size: 2.1rem;
+  }
+}
