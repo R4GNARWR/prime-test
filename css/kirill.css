@@ -565,7 +565,7 @@
 }
 
 .img-plus::before {
-  content: url("/img/img-plus.svg");
+  content: url("/prime-test/img/img-plus.svg");
   z-index: 6;
   position: absolute;
   width: 4.8rem;
