@@ -153,7 +153,7 @@
 		<img src="/prime-test/img/section_01.webp" alt="section_01">
 	</picture>
 	<div class="container mt-auto position-relative">
-		<a href="" class="main-btn bottom-btn modal-btn">ПОЛУЧИТЬ КАТАЛОГ</a>
+		<a href="" class="main-btn bottom-btn modal-btn">УЗНАТЬ ДЕТАЛИ</a>
 		<div class="main-arrow-down d-lg-flex d-none position-relative">
 			<div class="main-arrow-down__inner">
 				<a href="#s02"><img src="/prime-test/img/arrow-down.svg" alt=""></a>
@@ -355,7 +355,7 @@
 			</div>
 		</div>
 		<div class="s-top-hidden mt-auto d-lg-block d-none">
-			<a href="" class="main-btn bottom-btn modal-btn" data-label="Познакомиться с проектом" data-text="Узнать подробности у менеджера. Мы перезвоним и направим проект">Познакомиться с проектом</a>
+			<a href="" class="main-btn bottom-btn modal-btn" data-label="Познакомиться с проектом" data-text="Узнать подробности у менеджера. Мы перезвоним и направим проект.">Познакомиться с проектом</a>
 		</div>
 		<div class="s-top-hidden arrow-down__container">
 			<!-- <a href="" class="main-btn bottom-btn"> Узнать подробнее</a> -->
@@ -633,7 +633,7 @@
 				</div>
 			</div>
 			<div class="s-top-hidden mt-auto d-lg-block d-none">
-				<a href="" class="main-btn bottom-btn modal-btn" data-label="Подобрать вид из окон" data-text="Узнать подробности у менеджера. Мы перезвоним и направим визуализации">Подобрать вид из окон</a>
+				<a href="" class="main-btn bottom-btn modal-btn" data-label="Подобрать вид из окон" data-text="Узнать подробности у менеджера. Мы перезвоним и направим визуализации.">Подобрать вид из окон</a>
 			</div>
 		</div>
 		<div class="s-top-hidden arrow-down__container">
@@ -897,7 +897,7 @@
 	</div>
 
 	<div class="s-top-hidden mt-auto d-lg-block d-none">
-		<a href="" class="main-btn bottom-btn"> Узнать подробнее</a>
+		<a href="" class="main-btn bottom-btn modal-btn" data-label="" data-text=""> Узнать подробнее</a>
 	</div>
 
 	<div class="container section__container s-top-hidden s10-text">
@@ -1444,12 +1444,18 @@
 				<form class="buy-form" action="">
 					<div class="buy-form__label">Мы перезвоним и обсудим детали.</div>
 					<div class="row">
-						<div class="col-lg-6 col-12">
-							<input type="text" placeholder="Ваше имя">
-						</div>
-						<div class="col-lg-6 col-12">
-							<input type="text" placeholder="Телефон">
-						</div>
+						<form action="" class="callorder" autocomplete="off">
+							<input type="hidden" hidden name="ajax" value="0">
+							<input type="hidden" hidden name="extra" value="">
+							<input type="hidden" hidden name="ym" value="">
+							<div class="col-lg-6 col-12">
+								<input type="text" name="name" autocomplete="off" placeholder="Ваше имя" required>
+							</div>
+							<div class="col-lg-6 col-12">
+								<input name="phone" type="text" placeholder="Телефон" required>
+							</div>
+						</form>
+
 					</div>
 					<div class="row buy-form__terms-row">
 						<div class="col-md-6 col-12">
