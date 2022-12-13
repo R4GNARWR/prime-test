@@ -295,35 +295,5 @@ $(function() {
     });
 	*/
 
-	const swiper = new Swiper('.progress-archive__swiper', {
-		// Optional parameters
-		direction: 'horizontal',
-		spaceBetween: 24,
-		loop: true,
-		centeredSlides: true,
-
-		// Navigation arrows
-		navigation: {
-		  nextEl: '.progress-archive__next',
-		  prevEl: '.progress-archive__prev',
-		},
-	  
-		// And if we need scrollbar
-		scrollbar: {
-		  el: '.progress-archive__scrollbar',
-		},
-
-		breakpoints: {
-			// when window width is >= 480px
-			1: {
-			  slidesPerView: 2,
-			},
-			// when window width is >= 640px
-			768: {
-			  slidesPerView: 3,
-			}
-		  }
-	  });
-
 });
 

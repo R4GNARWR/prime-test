@@ -143,166 +143,114 @@
 </div>
 
 <main class="main">
-    <section class="section s s-pt s20 pp-scrollable">
-        <div class="anchor" id="section20"></div>
-        <div class="container s__container position-relative flex-column">
-            <div class="progress__label">
-                Декабрь 2023
+    <section class="section s s-pt s21 pp-scrollable">
+        <div class="container">
+            <div class="flats__top">
+                <div class="flats__label">Выбор по параметрам</div>
+                <div class="flats__top-filter">
+                    <div class="flats__filter d-lg-flex d-none">
+                        <div class="flats__filter-item">
+                            <input type="radio" name="filter-type" id="gen" value="gen">
+                            <label class="btn btn-filter" for="gen">на генплане</label>
+                            <a class="flats__filter-type flats__filter-type__active" href=""><img src="/img/blocks.svg" alt=""> плитка</a>
+                        </div>
+                        <div class="flats__filter-item">
+                            <input type="radio" name="filter-type" id="param" value="param">
+                            <label class="btn btn-filter" for="param">по параметрам</label>
+                            <a class="flats__filter-type" href=""> <img src="/img/list.svg" alt=""> список</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="row">
-                <div class="col-lg-4 col-6">
-                    <div class="progress__img img-plus plus-left position-relative">
-                        <img src="/img/progress1.jpg" data-fancybox="gallery" data-src="/img/progress1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                    <div class="progress__img img-plus plus-right position-relative">
-                        <img src="/img/progress2.jpg" data-fancybox="gallery" data-src="/img/progress2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4 col-6">
-                    <div class="progress__img img-plus plus-left position-relative">
-                        <img src="/img/progress3.jpg" data-fancybox="gallery" data-src="/img/progress3.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            
-            <a href="" class="main-btn progress__btn">ПОКАЗАТЬ ЕЩЕ</a>
-            
-            <div class="progress__label">
-                Архив
-            </div>
-            
-            <div class="radio__type">
-                <div class="radio__type-item">
-                    <input type="radio" name="year" id="year1" value="2022" checked>
-                    <label class="btn radio__type-btn" for="year1">2022</label>
-                </div>
-
-                <div class="radio__type-item">
-                    <input type="radio" name="year" id="year2" value="2023">
-                    <label class="btn radio__type-btn" for="year2">2023</label>
-                </div>
-            </div>
-        </div>
-        
-        <div class="container position-relative">
-            <div class="progress-archive__swiper position-relative">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide progress-archive__swiper-slide" data-year="2022">
-                        <a href="#">
-                        <div class="progress-archive__img">
-
-                                <img src="/img/progress3.jpg" alt="">
-                                <div class="progress-archive__img-month">декабрь</div>
+                <div class="col-lg-2 col-12">
+                    <div class="options__label">Блок</div>
+                    <div class="flats__options">
+                        <div class="flats__options__item">
+                            <input type="checkbox" name="block" id="A" value="A">
+                            <label class="btn btn-options" for="A">А</label>
                         </div>
-                        </a>
-                    </div>
-                    <div class="swiper-slide progress-archive__swiper-slide" data-year="2022">
-                        <a href="#">
-                        <div class="progress-archive__img">
-                            <img src="/img/progress3.jpg" alt="">
-                            <div class="progress-archive__img-month">Ноябрь</div>
+                        <div class="flats__options__item">
+                            <input type="checkbox" name="block" id="B" value="B">
+                            <label class="btn btn-options" for="B">Б</label>
                         </div>
-                    </a>
                     </div>
-                    <div class="swiper-slide progress-archive__swiper-slide" data-year="2023">
-                        <a href="#">
-                        <div class="progress-archive__img">
-                            <img src="/img/progress3.jpg" alt="">
-                            <div class="progress-archive__img-month">Октябрь</div>
+                    <div class="options__label">Количество комнат</div>
+                    <div class="flats__options">
+                        <div class="flats__options__item">
+                            <input type="checkbox" name="rooms" id="st" value="st">
+                            <label class="btn btn-options" for="st">СТ</label>
                         </div>
-                    </a>
+                        <div class="flats__options__item">
+                            <input type="checkbox" name="rooms" id="1" value="1">
+                            <label class="btn btn-options" for="1">1</label>
+                        </div>
+                        <div class="flats__options__item">
+                            <input type="checkbox" name="rooms" id="2" value="2">
+                            <label class="btn btn-options" for="2">2</label>
+                        </div>
+                        <div class="flats__options__item">
+                            <input type="checkbox" name="rooms" id="2c" value="2c">
+                            <label class="btn btn-options" for="2c">2c</label>
+                        </div>
                     </div>
-                    <div class="swiper-slide progress-archive__swiper-slide" data-year="2022">
-                        <a href="#">
-                        <div class="progress-archive__img">
-                            <img src="/img/progress3.jpg" alt="">
-                            <div class="progress-archive__img-month">Сентябрь</div>
+                    <div class="options__label">Цена, млн ₽</div>
+                    <input type="text" class="range" id="range__price" name="range__price" value="" data-min="7.5" data-max="30.5" data-type="double" />
+                    <div class="options__label">Площадь, м<sup>2</sup></div>
+                    <input type="text" class="range" id="range__square" name="range__price" value="" data-min="22" data-max="104" data-type="double" />
+                    <div class="options__label">Этаж</div>
+                    <input type="text" class="range" id="range__floor" name="range__price" value="" data-min="1" data-max="25" data-type="double" />
+                    <div class="flats__filter d-lg-none d-flex mb-lg-0 mb-90">
+                        <div class="flats__filter-item">
+                            <a class="flats__filter-type flats__filter-type__active" href=""><img src="/img/blocks.svg" alt=""> плитка</a>
                         </div>
-                    </a>
+                        <div class="flats__filter-item">
+                            <a class="flats__filter-type" href=""> <img src="/img/list.svg" alt=""> список</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-             <div class="progress-archive__nav progress-archive__prev"><img src="/img/progress-left-arrow.svg" alt=""></div>
-             <div class="progress-archive__nav progress-archive__next"><img src="/img/progress-right-arrow.svg" alt=""></div>
-        </div>
-        <div class="container position-relative">
-            <div class="swiper-scrollbar progress-archive__scrollbar"></div>
-        </div>
-        
-        <div class="container s__container position-relative flex-column">
-            <div class="row mb-20">
-                <div class="col-lg-5 col-lg-12">
-                    <div class="row">
-                        <div class="col-lg-5">
-                            <div class="s19-titles">
-                                <div class="h2">Онлайн трансляция</div>
-                                <div class="h4"><span class="text-gold-g">THE PRIME CONSTRUCTION</span></div>
+                <div class="col-lg-10 col-12">
+                    <div class="options__result">Найдено N квартир</div>
+                    <div class="flats__list">
+                        <div class="flats__list-top">
+                            <div class="flats__list-item flats__list-top-item">
+                                <div>Номер</div>
+                                <div>Этаж</div>
+                                <div>Площадь</div>
+                                <div>Комнат</div>
+                                <div>Стоимость</div>    
                             </div>
-                            <hr class="s-bot-hidden d-lg-none">
                         </div>
-                        <div class="col-lg-5 align-self-end s-bot-hidden mt-20">
-                            <div class="h5 text-gold-g"><span>Следите за самыми актуальными изменениями на площадке в режиме онлайн:</span></div>
+                        <div class="flats__list-item">
+                            <div>140</div>
+                            <div>13</div>
+                            <div>39.76</div>
+                            <div>1</div>
+                            <div>10 000 000</div>
+                            <div class="flats__list-btn"><a href="#">Бронировать</a></div>
+                        </div>
+                        <div class="flats__list-item">
+                            <div>140</div>
+                            <div>13</div>
+                            <div>39.76</div>
+                            <div>1</div>
+                            <div>10 000 000</div>
+                            <div class="flats__list-btn"><a href="#">Бронировать</a></div>
+                        </div>
+                        <div class="flats__list-item">
+                            <div>140</div>
+                            <div>13</div>
+                            <div>39.76</div>
+                            <div>1</div>
+                            <div>10 000 000</div>
+                            <div class="flats__list-btn"><a href="#">Бронировать</a></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row s-bot-hidden my-auto">
-                <div class="col-lg-7 ml-auto">
-                    <div class="live">
-                        <iframe width="640" height="480" src="https://rtsp.me/embed/Q3bTRN5H/" frameborder="0" allowfullscreen=""></iframe>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row mt-30">
-                <div class="col-12">
-                    <hr>
-                </div>
-                <div class="col-8 col-sm-6 mt-30 d-lg-none">
-                    <a href="#" class="footer__logo ">
-                        <img src="/img/logo_the_prime_line.svg" alt="logo">
-                    </a>
-                </div>
-                <div class="col-8 col-sm-6 mt-30 d-none d-lg-block">
-                    <a href="#s01" class="footer__logo">
-                        <img src="/img/logo_the_prime_line.svg" alt="logo">
-                    </a>
-                </div>
-                <div class="col-sm-6 text-sm-right mt-30">
-                    <div class="footer__phones">
-                        <a class="text-gold-g" href="tel:+73472010000">+7 (347) 201-00-00</a>
-                    </div>
-                    <div class="h7 mt-10 d-sm-flex">
-                        <div class="flex-grow-1 d-none d-sm-block"></div>
-                        <div class="mr-10">Офис продаж:</div>
-                        <div>г. Уфа, К. Маркса, 54</div>
-                    </div>
-                    <div class="h7 mt-10 d-sm-flex">
-                        <div class="flex-grow-1 d-none d-sm-block"></div>
-                        <div class="mr-10">Режим работы:</div>
-                        <div>пн-пт 10:00-20:00<br>сб 11:00-17:00</div>
-                    </div>
-                </div>
-                <div class="col-sm-6 mt-30">
-                    <a href="https://t.me/theprime_ufa" target="_blank" class="footer__link d-inline-flex align-items-center"><span href="javascript:;" class="btn btn-icon btn-gold btn-gold-g"><i class="icon-tg"></i></span> Telegam</a>
-                </div>
-                <div class="col-sm-6 text-sm-right mt-30">
-                    <a href="javascript:;" data-fancybox data-src="#callorder" class="footer__link footer__link_reverse d-inline-flex align-items-center"><span href="javascript:;" class="btn btn-icon btn-gold btn-gold-g"><i class="icon-phone"></i></span> Заказать звонок</a>
-                </div>
-                <div class="col-sm-6 mt-30">
-                    <div class="h7">&#169; ГК "Строительное управление №1"</div>
-                    <div class="h7 mt-15">Информация на сайте не является публичной офертой</div>
-                </div>
-                <div class="col-sm-6 text-sm-right mt-30 align-self-end">
-                    <a href="/conf_policy.pdf" target="_blank" class="h7">Политика конфиденциальности</a>
-                </div>
-                
             </div>
         </div>
-    </section>
+    </section>   
     
 </main>
 <script src="js/jquery-3.6.0.js"></script>
