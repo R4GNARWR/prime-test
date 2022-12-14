@@ -430,6 +430,22 @@
   background: linear-gradient(90.65deg, #BA975C 0.56%, #F6E7CC 49.96%, #D7A250 98.34%);
 }
 
+.progress-wrap {
+  row-gap: 3rem;
+}
+
+.progress__img-wrap {
+  overflow: hidden;
+}
+
+.progress__img-wrap .progress__img::after {
+  padding-top: 0%;
+}
+
+.progress__img-wrap-open .progress__img::after {
+  padding-top: 60%;
+}
+
 .progress__img {
   position: relative;
   width: 100%;
@@ -439,6 +455,9 @@
   content: "";
   display: block;
   padding-top: 60%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .progress__img img {
@@ -532,6 +551,10 @@
   object-fit: cover;
 }
 
+.progress-archive__img a {
+  z-index: 4;
+}
+
 .progress-archive__img::after {
   content: "";
   position: absolute;
@@ -545,6 +568,7 @@
   -o-transition: 0.5s;
   transition: 0.5s;
   z-index: 2;
+  pointer-events: none;
 }
 
 .progress-archive__img-month {
@@ -570,6 +594,7 @@
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  pointer-events: none;
 }
 
 .swiper-slide-active .progress-archive__img::after {
@@ -1596,7 +1621,7 @@
 .irs--flat .irs-from,
 .irs--flat .irs-to,
 .irs--flat .irs-single {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 1.6rem;
   line-height: 1.4em;
   color: #BA975C;
@@ -1621,7 +1646,7 @@
 
 .irs--flat .irs-min,
 .irs--flat .irs-max {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 1.6rem;
   line-height: 1.4em;
   color: #BA975C;
@@ -1835,6 +1860,28 @@
 .custom-control-label::before {
   border: 1px solid #D7A250;
   background: transparent;
+}
+
+.top-btn {
+  padding: 1.1rem 3.7rem;
+  background: #BA975C;
+  border-radius: 35.6546px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #090909;
+  text-decoration: none;
+}
+
+.top-btn:hover {
+  color: #090909;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none'><path d='M3 12l6 6L21 6' stroke='%23BA975C' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/></svg>") !important;
 }
 
 @media (max-width: 1400px) {

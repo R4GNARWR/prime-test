@@ -1892,6 +1892,7 @@ h7,
 
   .s06 {
     padding-bottom: 2rem;
+    z-index: 2;
   }
 
   .s12 {

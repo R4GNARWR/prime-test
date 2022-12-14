@@ -1,6 +1,6 @@
-$('.header__menu-toggle, .header__left-menu-item').on('click', function(){
-    $('.header__left-menu').toggleClass('header__left-menu__opened');
-})
+// $('.header__menu-toggle, .header__left-menu-item').on('click', function(){
+//     $('.header__left-menu').toggleClass('header__left-menu__opened');
+// })
 
 
 $(".range").each(function(){
@@ -161,6 +161,7 @@ console.log(slides)
 const swiper = new Swiper('.progress-archive__swiper', {
     direction: 'horizontal',
     spaceBetween: 24,
+    centeredSlides: true,
     loop: false,
 
     navigation: {
@@ -181,7 +182,7 @@ const swiper = new Swiper('.progress-archive__swiper', {
         }
       }
   });
-
+    
 
     let archiveValue
 
@@ -201,6 +202,7 @@ const swiper = new Swiper('.progress-archive__swiper', {
             {
                 swiper.appendSlide(slides[i].html)
             }
+            swiper.slideTo(1)
         }
     }
     hideArchiveSlides(archiveValue)
@@ -214,5 +216,44 @@ const swiper = new Swiper('.progress-archive__swiper', {
   })
 
 
+$(function(){
+    let loadValue = 0;
+    let loaded = 3;
+    images = []
+    function addImages(element, i)
+    {
+        images[i] =
+        {
+            element: element,
+        }
+    }
+    console.log(images)
 
+    $('.progress__img-wrap').each(function(i = 0)
+    {
+        $(this).removeClass('progress__img-wrap-open')
+        loadValue++;
+        element = $(this);
+        addImages(element, i)
+        i++;
+    })
 
+    function loadImg(value)
+    {
+        for (var i = 0; i < value; i++) 
+        {
+            images[i].element.addClass('progress__img-wrap-open')
+        }
+        
+    }
+    
+    loadImg(loaded)
+
+    $('.progress__btn').on('click', function(){
+        if( loaded < loadValue)
+        {
+            loaded += 3
+        }
+        loadImg(loaded)
+    })
+})
