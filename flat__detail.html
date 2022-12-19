@@ -144,165 +144,75 @@
 </div>
 
 <main class="main">
-    <section class="section s s-pt s21 pp-scrollable">
-        <div class="container">
-            <div class="flats__top">
-                <div class="flats__label">Выбор по параметрам</div>
-                <div class="flats__top-filter">
-                    <div class="flats__filter d-lg-flex d-none">
-                        <div class="flats__filter-item">
-                            <input type="radio" name="filter-type" id="gen" value="gen">
-                            <label class="btn btn-filter" for="gen">на генплане</label>
-                            <a class="flats__filter-type flats__filter-type__active" href=""><img src="/prime-test/img/blocks.svg" alt=""> плитка</a>
-                        </div>
-                        <div class="flats__filter-item">
-                            <input type="radio" name="filter-type" id="param" value="param">
-                            <label class="btn btn-filter" for="param">по параметрам</label>
-                            <a class="flats__filter-type" href=""> <img src="/prime-test/img/list.svg" alt=""> список</a>
-                        </div>
-                    </div>
-                </div>
 
-            </div>
+    <section class="section s s-pt pp-scrollable">
+        <div class="container s__container position-relative flex-column">
             <div class="row">
-                <div class="col-lg-2 col-12">
-                    <div class="options__label">Блок</div>
-                    <div class="flats__options">
-                        <div class="flats__options__item">
-                            <input type="checkbox" name="block" id="A" value="A">
-                            <label class="btn btn-options" for="A">А</label>
-                        </div>
-                        <div class="flats__options__item">
-                            <input type="checkbox" name="block" id="B" value="B">
-                            <label class="btn btn-options" for="B">Б</label>
-                        </div>
+                <div class="flat-detail__filter flats__filter row col-12 d-md-none ">
+                    <div class="flats__filter-item col-5">
+                        <input type="radio" name="filter-type" id="gen" value="floor">
+                        <label class="btn btn-filter flat__btn-filter" for="gen">на этаже</label>
                     </div>
-                    <div class="options__label">Количество комнат</div>
-                    <div class="flats__options">
-                        <div class="flats__options__item">
-                            <input type="checkbox" name="rooms" id="st" value="st">
-                            <label class="btn btn-options" for="st">СТ</label>
-                        </div>
-                        <div class="flats__options__item">
-                            <input type="checkbox" name="rooms" id="1" value="1">
-                            <label class="btn btn-options" for="1">1</label>
-                        </div>
-                        <div class="flats__options__item">
-                            <input type="checkbox" name="rooms" id="2" value="2">
-                            <label class="btn btn-options" for="2">2</label>
-                        </div>
-                        <div class="flats__options__item">
-                            <input type="checkbox" name="rooms" id="2c" value="2c">
-                            <label class="btn btn-options" for="2c">2c</label>
-                        </div>
-                    </div>
-                    <div class="options__label">Цена, млн ₽</div>
-                    <input type="text" class="range" id="range__price" name="range__price" value="" data-min="7.5" data-max="30.5" data-type="double" />
-                    <div class="options__label">Площадь, м<sup>2</sup></div>
-                    <input type="text" class="range" id="range__square" name="range__price" value="" data-min="22" data-max="104" data-type="double" />
-                    <div class="options__label">Этаж</div>
-                    <input type="text" class="range" id="range__floor" name="range__price" value="" data-min="1" data-max="25" data-type="double" />
-                    <div class="flats__filter d-lg-none d-flex mb-lg-0 mb-90">
-                        <div class="flats__filter-item">
-                            <a class="flats__filter-type flats__filter-type__active" href=""><img src="/prime-test/img/blocks.svg" alt=""> плитка</a>
-                        </div>
-                        <div class="flats__filter-item">
-                            <a class="flats__filter-type" href=""> <img src="/prime-test/img/list.svg" alt=""> список</a>
-                        </div>
+                    <div class="flats__filter-item col-5">
+                        <input type="radio" name="filter-type" id="param" value="gen">
+                        <label class="btn btn-filter flat__btn-filter" for="param">на генплане</label>
                     </div>
                 </div>
-                <div class="col-lg-10 col-12">
-                    <div class="options__result">Найдено N квартир</div>
-                    <div class="flats__row">
-                        <div class="flats__item">
-                            <div class="flats__item-label">1 комната №140</div>
-                                <div class="flats__item-img">
-                                    <img src="/prime-test/img/flat.png" alt="">
-                                </div>
-                                <div class="flats__item-desc">
-                                    <div>Стоимость</div>
-                                    <div>10 000 000</div>
-                                    <div>Этаж</div>
-                                    <div>17</div>
-                                    <div>Площадь</div>
-                                    <div>39.76</div>
-                                </div>
+                <div class="col-md-4 col-12">
+                    <div class="flat__label">39,76 кв. м</div>
+                    <div class="flat__name">квартира для молодой семьи</div>
+                    <div class="flat__info">3 этаж <br> Секция А</div>
+                    <div class="flat__price-label">стоимость</div>
+                    <div class="flat__price">
+                        10 000 000 ₽
+                    </div>
+                    <div class="flat__floor d-md-block d-none">
+                        <img src="/prime-test/img/flat-floor.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 ">
+                    <div class="flat__img">
+                        <img src="/prime-test/img/flat-detail.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 d-flex flex-column">
+                <div class="row d-md-block d-none">
+                    <div class=" flat-detail__filter col-md-6 col-12 ml-auto">
+                        <div class="row">
+                            <div class="flats__filter-item col-6">
+                                <input type="radio" name="filter-type" id="gen" value="floor">
+                                <label class="btn btn-filter flat__btn-filter" for="gen">на этаже</label>
+                            </div>
+                            <div class="flats__filter-item col-6">
+                                <input type="radio" name="filter-type" id="param" value="gen">
+                                <label class="btn btn-filter flat__btn-filter" for="param">на генплане</label>
+                            </div>
                         </div>
-                        <div class="flats__item">
-                            <div class="flats__item-label">1 комната №140</div>
-                                <div class="flats__item-img">
-                                    <img src="/prime-test/img/flat.png" alt="">
-                                </div>
-                                <div class="flats__item-desc">
-                                    <div>Стоимость</div>
-                                    <div>10 000 000</div>
-                                    <div>Этаж</div>
-                                    <div>17</div>
-                                    <div>Площадь</div>
-                                    <div>39.76</div>
-                                </div>
+
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12 ml-auto d-flex">
+                            <div class="flat__floor d-md-none">
+                                <img src="/prime-test/img/flat-floor.png" alt="">
+                            </div>
+                            <div class="flat__compass">
+                                <img src="/prime-test/img/compass.svg" alt="">
+                            </div>
                         </div>
-                        <div class="flats__item">
-                            <div class="flats__item-label">1 комната №140</div>
-                                <div class="flats__item-img">
-                                    <img src="/prime-test/img/flat.png" alt="">
-                                </div>
-                                <div class="flats__item-desc">
-                                    <div>Стоимость</div>
-                                    <div>10 000 000</div>
-                                    <div>Этаж</div>
-                                    <div>17</div>
-                                    <div>Площадь</div>
-                                    <div>39.76</div>
-                                </div>
-                        </div>
-                        <div class="flats__item">
-                            <div class="flats__item-label">1 комната №140</div>
-                                <div class="flats__item-img">
-                                    <img src="/prime-test/img/flat.png" alt="">
-                                </div>
-                                <div class="flats__item-desc">
-                                    <div>Стоимость</div>
-                                    <div>10 000 000</div>
-                                    <div>Этаж</div>
-                                    <div>17</div>
-                                    <div>Площадь</div>
-                                    <div>39.76</div>
-                                </div>
-                        </div>
-                        <div class="flats__item">
-                            <div class="flats__item-label">1 комната №140</div>
-                                <div class="flats__item-img">
-                                    <img src="/prime-test/img/flat.png" alt="">
-                                </div>
-                                <div class="flats__item-desc">
-                                    <div>Стоимость</div>
-                                    <div>10 000 000</div>
-                                    <div>Этаж</div>
-                                    <div>17</div>
-                                    <div>Площадь</div>
-                                    <div>39.76</div>
-                                </div>
-                        </div>
-                        <div class="flats__item">
-                            <div class="flats__item-label">1 комната №140</div>
-                                <div class="flats__item-img">
-                                    <img src="/prime-test/img/flat.png" alt="">
-                                </div>
-                                <div class="flats__item-desc">
-                                    <div>Стоимость</div>
-                                    <div>10 000 000</div>
-                                    <div>Этаж</div>
-                                    <div>17</div>
-                                    <div>Площадь</div>
-                                    <div>39.76</div>
-                                </div>
+                    </div>
+                    <div class="row h-100">
+                        <div class="col-md-6 col-10 flat__btns-wrap mb-20">
+                            <div class="row">
+                                <a href="" class="main-btn flat-detail__btn col-12">Узнать больше</a>
+                                <a href="" class="main-btn flat-detail__btn col-12">Распечатать</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>  
+    </section>
     
 </main>
 <script src="js/jquery-3.6.0.js"></script>
