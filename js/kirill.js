@@ -68,3 +68,20 @@ $('.modal-btn').fancybox({
     src  : '#callorder',
 });
 
+$('.flats__filter-type-chess').addClass('flats__filter-type__active');
+$('.flats__row').addClass('open')
+
+$('.flats__filter-type-list').on('click', function()
+{
+    $(this).addClass('flats__filter-type__active');
+    $('.flats__filter-type-chess').removeClass('flats__filter-type__active')
+    $('.flats__list').addClass('open')
+    $('.flats__row').removeClass('open')
+})
+$('.flats__filter-type-chess').on('click', function()
+{
+    $(this).addClass('flats__filter-type__active');
+    $('.flats__filter-type-list').removeClass('flats__filter-type__active')
+    $('.flats__row').addClass('open')
+    $('.flats__list').removeClass('open')
+})
