@@ -2384,6 +2384,7 @@
 }
 .flats__item-btn__wrap
 {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
