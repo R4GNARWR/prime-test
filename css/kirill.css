@@ -2364,3 +2364,16 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 3fr 2fr;
   }
 }
+.flats__item-btn
+{
+  padding: 0.762rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-family: 'TT Firs Neue';
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.47em;
+  color: #090909;
+}
