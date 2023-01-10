@@ -2378,4 +2378,14 @@
   color: #090909;
   background: #BA975C;
   border: 0.761765px solid #BA975C;
+  text-decoration: none;
+  width: 50%;
+
+}
+.flats__item-btn__wrap
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1rem;
 }
