@@ -2370,7 +2370,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
   font-family: 'TT Firs Neue';
   font-weight: 300;
   font-size: 1.4rem;
@@ -2382,6 +2381,10 @@
   width: 50%;
 
 }
+.flats__item-btn:hover
+{
+  color: #090909;
+}
 .flats__item-btn__wrap
 {
   margin-top: 1rem;
@@ -2389,4 +2392,12 @@
   flex-direction: column;
   align-items: flex-start;
   row-gap: 1rem;
+}
+@media (max-width:768px) {
+  .flats__item-btn
+{
+  width: 50%;
+  font-size: 2rem;
+  padding: 0.66rem;
+}
 }
