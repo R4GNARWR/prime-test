@@ -2398,7 +2398,7 @@
 @media (max-width:768px) {
   .flats__item-btn
   {
-    width: 50%;
+    width: 80%;
     font-size: 2rem;
     padding: 0.66rem;
   }
