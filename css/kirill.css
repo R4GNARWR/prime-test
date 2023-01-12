@@ -2378,8 +2378,9 @@
   line-height: 1.47em;
   color: #090909;
   text-decoration: none;
-  width: 50%;
-  margin-inline: auto;
+  width: 70%;
+  justify-content: center;
+  text-align: center;
 
 }
 .flats__item-btn:hover
