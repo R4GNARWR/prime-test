@@ -2413,7 +2413,9 @@
   text-transform: uppercase;
   color: #BA975C;
   display: flex;
+  align-items: center;
   column-gap: 1.5rem;
+  text-decoration: none;
 }
 @media (max-width:768px) {
   .flat__back
