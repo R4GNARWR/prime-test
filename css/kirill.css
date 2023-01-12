@@ -2412,6 +2412,8 @@
   line-height: 1.2em;
   text-transform: uppercase;
   color: #BA975C;
+  display: flex;
+  column-gap: 1.5rem;
 }
 @media (max-width:768px) {
   .flat__back
