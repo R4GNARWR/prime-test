@@ -2403,3 +2403,19 @@
     padding: 0.66rem;
   }
 }
+.flat__back
+{
+  font-family: 'TT Firs Neue';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  color: #BA975C;
+}
+@media (max-width:768px) {
+  .flat__back
+  {
+    font-size: 2.66rem;
+  }
+}
